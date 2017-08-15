@@ -1,0 +1,270 @@
+@import resetcss
+@import variables
+
+/* ======== GLOBAL STYLES ======== */
+*
+    box-sizing: border-box
+
+body
+    font-family: $font
+
+.container
+    max-width: 1200px
+    width: 100%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    /*dlaczego działa? flow inherit jest niepotrzebne skoro mam wrap nie?*/
+    flex-flow: inherit
+
+.container-wide
+    max-width: 100%
+    margin: 0 auto
+    position: relative
+    display: flex
+    flex-wrap: wrap
+
+h1
+    font: 55px Open Sans
+    font-weight: 100
+
+h2
+    font: 30px Open Sans
+
+h3
+    font: 26px Open Sans
+
+h4
+    font: 20px Open Sans
+
+h5
+    font: 16px Open Sans
+
+a
+    color: $white
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+p
+    line-height: 28px
+
+.link-arrow
+    padding: 15px
+
+.link-arrow,
+a
+    font-weight: bold
+
+.button
+    background-color: #7AC494
+    border: none
+    color: $white
+    padding: 15px 15px
+    margin: 15px 0
+    text-align: center
+    border-radius: 5px
+    text-decoration: none
+    display: inline-block
+    font-size: 16px
+    transition: 2s background ease
+    &:hover
+        background-color: $hover-color
+
+.form
+    background-color: $melon-green
+    border: none
+    color: $white
+    padding: 15px 15px
+    margin: 15px
+    text-align: center
+    border-radius: 5px
+    text-decoration: none
+    display: inline-block
+    font-size: 16px
+    background-color: $gray-color
+
+/* ======== END of GLOBAL STYLES ======== */
+/* ======== STYLES ======== */
+.socialbar
+    position: fixed
+    left: 15px
+    bottom: 15px
+    text-align: center
+    margin: auto
+    z-index: 1
+
+.social-icon
+    background-color: #273155
+    padding: 10px
+    width: 52px
+    color: $white
+    font-size: 28px
+    line-height: 28px
+    transition: 1s background-color ease
+    cursor: pointer
+    border: 1px $white solid
+    border-radius: 5px
+
+.fa-facebook:hover
+    background-color: $facebook-color
+
+.fa-instagram:hover
+    background-color: $instagram-color
+
+.fa-google-plus:hover
+    background-color: $googleplus-color
+
+.fa-twitter:hover
+    background-color: $twitter-color
+
+header
+    background: no-repeat url(header.jpg)
+    background-size: cover
+    background-position: 50% 50%
+    height: 100vh
+    width: 100%
+    color: $white
+
+.header-logo
+    position: relative
+    top: 10%
+    left: 10%
+    margin-left: 10px
+    cursor: pointer
+
+.header-slogan
+    position: absolute
+    bottom: 20%
+    text-shadow: 1px 0.5px $black
+    margin-left: 10px
+
+.intro
+    padding: 25px 0
+
+.boxes
+    margin: 30px auto
+    max-width: 100%
+    flex-direction: row
+    align-content: center
+    flex-wrap: wrap
+
+.box
+    height: 260px
+    color: $white
+    flex-wrap: nowrap
+    text-shadow: 1px 0.5px $black
+
+.box-1
+    background-color: $box-background-color-0
+    flex: 1
+
+.box-2
+    background-color: $box-background-color-1
+    flex: 1
+
+.box-3
+    background: url(https://images.pexels.com/photos/414826/pexels-photo-414826.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) 50% 50%
+    flex: 2
+
+.box-4
+    background-color: $box-background-color-2
+    flex: 1
+
+.box-5
+    background: url(https://images.pexels.com/photos/501123/pexels-photo-501123.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) 50% 15%
+    flex: 2
+
+.box-6
+    background-color: $melon-green
+    flex: 1
+
+.box-7
+    background: url(https://images.pexels.com/photos/418682/pexels-photo-418682.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) 10% 80%
+    flex: 1
+
+.specification
+    padding-top: 0
+    padding-bottom: 35px
+
+.hero
+    background: no-repeat url(hero.jpg)
+    background-size: cover
+    height: 80vh
+    width: 100%
+    color: $white
+    background-position: 50% 50%
+
+.hero-slogan
+    position: relative
+    top: 50%
+    text-align: left
+    height: 30%
+    margin-left: 10px
+    text-shadow: 1px 0.5px $black
+
+.hero-slogan h2
+    font-size: 55px
+    font-weight: 100
+    text-align: left
+
+.greenfield
+    background-color: #7AC494
+    color: $white
+    padding: 35px 0
+    text-shadow: 1px 0.5px $black
+
+.grayfield
+    background-color: $gray-color
+    padding: 20px 0
+
+.grayfield h2
+    padding-top: 25px
+    padding-bottom: 5px
+
+.tag-legacy
+    display: inline-block
+    background-color: gray
+    border-radius: 5px
+    padding: 10px
+    font-size: 12px
+    font-weight: bold
+    color: $white
+
+.tag-popular
+    display: inline-block
+    background-color: #BD8CBF
+    border-radius: 5px
+    padding: 10px
+    font-size: 12px
+    font-weight: bold
+    color: $white
+
+.item-platform
+    font-size: 35px
+    color: #C5C5C5
+    padding: 15px 10px
+    transition: all 2s ease
+    &:hover
+        color: $black
+
+footer
+    background-color: #19222C
+    color: $white
+    width: 100%
+    padding-top: 45px
+
+footer ul > li
+    line-height: 28px
+
+.footer-menu
+    display: flex
+
+/* centering menu with get in touch section */
+footer > .container > .col-6 > .col-4
+    padding-left: 0px
+
+/* ======== END of STYLES ======== */
+
+@import grid
+@import media
